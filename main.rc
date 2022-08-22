@@ -1,0 +1,67 @@
+#include <windows.h>
+#include "resource.h"
+
+A  ICON "res\\icona.ico"
+AA CURSOR "res\\pensil.cur"
+AAA CURSOR "res\\target.cur"
+AAAA BITMAP "res\\AllColors.bmp"
+
+MAINMENU MENU 
+{
+  POPUP "&File"
+ {
+   MENUITEM "&New", ID_NEW_IMAGE
+   MENUITEM SEPARATOR       
+   MENUITEM "Save as &Bitmap", ID_SAVE_IMAGE_BITMAP
+   MENUITEM "Save as &Icon", ID_SAVE_IMAGE_ICON
+   MENUITEM "Save as &Cursor", ID_SAVE_IMAGE_CURSOR
+   MENUITEM SEPARATOR 
+   POPUP "&Settings"
+   {
+     MENUITEM "Set Transparent &White", ID_SET_TRASPARENT_WHITE
+     MENUITEM "Set Transparent &Black", ID_SET_TRASPARENT_BLACK CHECKED
+   }
+ }
+ 
+ POPUP "&Mode"
+ {
+  MENUITEM "&Draw", ID_MODE_DRAW CHECKED
+  MENUITEM "Set Cursor &HotSpot", ID_MODE_HOTSPOT
+ }
+ 
+ POPUP "&Display"
+ {
+  MENUITEM "Show Mouse &Coords", ID_MODE_SHOWCOORDS
+ }
+
+
+}
+
+
+
+1 VERSIONINFO
+FILEVERSION 0,2,0,1
+PRODUCTVERSION 0,2,0,1
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", "AM71113363"
+			 VALUE "FileVersion", ""
+			 VALUE "FileDescription", "22-08-2022"
+			 VALUE "InternalName", ""
+			 VALUE "LegalCopyright", ""
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", "Bmp Converter"
+			 VALUE "ProductName", ""
+			 VALUE "ProductVersion", "v2.1"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0409, 1252
+	 }
+}
+
