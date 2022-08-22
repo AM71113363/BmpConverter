@@ -31,6 +31,6 @@ if the image contains black pixels after save those pixels will be transparent u
 * Set Transparent White/Black has nothing to do with the Transparent color int TransparentColorTab,since the palette entry 0 is black and 1 is white,
 the "Set Transparent White/Black" it changes the transparent color palette index.<br>
 * Bmp filesize must be 3126 bytes.<br>
-* Ico/Cursor filesize must be 2238 bytes<br>
-**LOL** you can dragdrop any file with filesize 3126/2238 bytes,and the App will load it,ofcourse the image its going to be based on file bytes.<br>
+* Ico/Cursor filesize must be 2238 bytes.<br>
+**LOL** you can dragdrop any file with filesize 3126/2238 bytes,and the App will load it,ofcourse the image its going to be based on file content.<br>
 
