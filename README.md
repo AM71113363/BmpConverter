@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" width="450" height="308" src="https://raw.githubusercontent.com/AM71113363/BmpConverter/master/info.png">
+<img align="center" width="450" height="308" src="https://raw.githubusercontent.com/AM71113363/BmpConverter/master/info.bmp">
 </p>
 
 # Bmp Converter -> BMP ICO CURSOR with Transparent Color
