@@ -24,10 +24,10 @@ UCHAR MakePalette(UCHAR **ImageBytes)
     palette[0][0]=palette[0][1]=palette[0][2]=0;      SetHashMap(0,0,YES); 
     palette[1][0]=palette[1][1]=palette[1][2]=0xFF;   SetHashMap(0xFFFFFF,1,YES);    
     
-    for(y=31; y>=0; --y)
+    for(y=31; y>=0; y--)
     {
         pixel=ImageBytes[y];
-        for(i=0; i<32; ++i)
+        for(i=0; i<32; i++)
         {
             col=*(UINT*)pixel;
             if(col!=ColorToRemove)
@@ -53,12 +53,12 @@ UCHAR MakePalette(UCHAR **ImageBytes)
         } 
     }
     
-    for(y=31; y>=0; --y)
+    for(y=31; y>=0; y--)
     {
         row=ImageBytes[y];
         pixel=row;
         col=0;
-        for(i=0; i<32; ++i)
+        for(i=0; i<32; i++)
         {
             key=pixel[i<<2]+(pixel[(i<<2)+1]<<8)+(pixel[(i<<2)+2]<<16);
             if(pixel[(i<<2)+3]==1) col++;              
@@ -113,7 +113,7 @@ void SaveImage(UCHAR **ImageBytes,USHORT xx,USHORT yy,UCHAR *name,USHORT type)
         }
     }
 
-    for(y=31; y>=0; --y)
+    for(y=31; y>=0; y--)
     {
         if(WriteFile(hFile,ImageBytes[y],32,&dwWritten, NULL)==0)
         {
@@ -123,7 +123,7 @@ void SaveImage(UCHAR **ImageBytes,USHORT xx,USHORT yy,UCHAR *name,USHORT type)
         }
     }
 
-    for(y=31; y>=0; --y)
+    for(y=31; y>=0; y--)
     {
         if(WriteFile(hFile,transparentMap[y],4,&dwWritten, NULL)==0)
         {
