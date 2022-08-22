@@ -28,7 +28,7 @@ You already know how to rebuilt it. ^_^<br>
 # NOTE
 * By Default the ICON/CURSOR transparent color is black,and before dragdrop the Color in TransparentColorTab need to be changed,otherwise 
 if the image contains black pixels after save those pixels will be transparent unless you set another Transparent color.<br>
-* Set Transparent White/Black has nothing to do with the Transparent color int TransparentColorTab,since the palette entry 0 is black and 1 is white,
+* Set Transparent White/Black has nothing to do with the Transparent color in TransparentColorTab,since the palette entry 0 is black and 1 is white,
 the "Set Transparent White/Black" it changes the transparent color palette index.<br>
 * Bmp filesize must be 3126 bytes.<br>
 * Ico/Cursor filesize must be 2238 bytes.<br>
