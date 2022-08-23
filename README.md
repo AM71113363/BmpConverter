@@ -34,6 +34,6 @@ the "Set Transparent White/Black" it changes the transparent color palette index
 * Ico/Cursor filesize must be 2238 bytes.<br>
 **LOL** you can dragdrop any file with filesize 3126/2238 bytes,and the App will load it,ofcourse the image its going to be based on file content.<br>
 
-#UPDATE
+# UPDATE
 For more use [BmpConverterV2](https://github.com/AM71113363/BmpConverterV2)<br>
 
